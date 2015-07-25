@@ -1,0 +1,17 @@
+string line = "1010";
+char[] array = line.ToCharArray();
+Array.Reverse(array);
+int answer;
+int counter = 0;
+    foreach (char item in array)
+    {
+        string chNum = item.ToString();
+        int lineNum = Convert.ToInt32(chNum);
+        //Console.WriteLine(lineNum);
+        double power = Math.Pow(2,counter);
+        int powerNum = Convert.ToInt32(power);
+        answer += (lineNum * powerNum);
+        //Console.WriteLine(answer);
+        counter++;
+    }
+Console.WriteLine(answer);
