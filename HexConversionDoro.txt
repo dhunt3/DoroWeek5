@@ -1,0 +1,7 @@
+string line = "6f";
+string[] array = line.Split();
+foreach (string hex in array)
+{
+    int value = Convert.ToInt32(hex, 16);
+    Console.WriteLine(value);
+}

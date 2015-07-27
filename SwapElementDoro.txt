@@ -1,0 +1,12 @@
+string line = "1 2 3 4 5 : 0-4";
+string[] array = line.Split();
+string range = array[array.Length-1];
+string numRangeFrom = "";
+string numRangeTo = "";
+char[] rangeArray = range.ToCharArray();
+foreach (char item in rangeArray)
+{
+    numRangeFrom = rangeArray[0].ToString();
+    numRangeTo = rangeArray[rangeArray.Length-1].ToString();
+}
+Console.WriteLine(numRangeFrom);
